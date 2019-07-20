@@ -1,0 +1,351 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.wplrf-account-button-container{
+    cursor: pointer;
+    background-color: #ffffff;
+    bottom: 30px;
+    position: fixed;
+    left: 30px;
+    padding: 10px 10px;
+    border: 1px solid red;
+    border-radius: 15px;
+    z-index: 99999;
+}
+.wplrf-account-button-container.left
+{
+    left: 94% !important;
+}
+.wplrf-account-button-container.center
+{
+    left: 50% !important;
+}
+.wplrf-account-btn
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+.wplrf-account-button-container img{
+    height: auto;
+    max-width: 35px;
+    vertical-align: middle;
+}
+#wplrf-login-container .wplrf-modal-heading,
+#wplrf-register-container .wplrf-modal-heading,
+#wplrf-lost-password-container .wplrf-modal-heading,
+#wplrf-logged-user-container .wplrf-modal-heading,
+#wplrf-change-password-container .wplrf-modal-heading,
+#wplrf-reset-password-container .wplrf-modal-heading,
+#wplrf-account-activation-container .wplrf-modal-heading
+{
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+
+.wplrf-container p .wplrf-input-text
+{
+    width: 30%; 
+    padding: 12px 20px; 
+    margin: 0; 
+    display: inline-block; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+} 
+.wplrf-usericon img.avatar{
+    width: 10%;
+    border-radius: 50%;
+}
+
+#wplrf-login-container .wplrf-login .wplrf-container p,
+#wplrf-register-container .wplrf-register .wplrf-container p,
+#wplrf-lost-password-container .wplrf-container p,
+#wplrf-logged-user-container .wplrf-container p,
+#wplrf-change-password-container .wplrf-container p,
+#wplrf-reset-password-container .wplrf-container p,
+#wplrf-account-activation-container .wplrf-container p
+{
+    text-align: center;
+}
+
+
+.wplrf-container button 
+{
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px; 
+    margin: 8px 0; 
+    border: none; 
+    cursor: pointer; 
+    width: 15%; 
+    text-transform: capitalize;
+}  
+#wplrf-user-lost-password-btn,
+#wplrf-change-password-btn,
+#wplrf-reset-password-btn,
+#wplrf_resend_activation_link
+{
+    width: 20%;
+}
+.wplrf-container .button.wplrf-close-btn
+{
+        background-color: #a00;
+        color: white;
+        padding: 7px;
+        margin: 0;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+        text-transform: capitalize;
+}
+  
+  
+.wplrf-container button:hover, 
+.wplrf-container .button.wplrf-close-btn
+{ 
+    opacity: 0.8; 
+} 
+  
+.wplrf-container { 
+    padding: 16px; 
+}  
+  
+.wplrf-modal { 
+    display: none;  
+    position: fixed; 
+    z-index: 9999;  
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;  
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px; 
+} 
+  
+.wplrf-modal-content { 
+    background-color: #fefefe; 
+    margin: 5% auto 15% auto;  
+    border: 1px solid #888; 
+    width: 60%;  
+} 
+  
+.animate { 
+    -webkit-animation: animatezoom 0.6s; 
+    animation: animatezoom 0.6s 
+} 
+  
+@-webkit-keyframes animatezoom { 
+    from {-webkit-transform: scale(0)}  
+    to {-webkit-transform: scale(1)} 
+} 
+    @keyframes animatezoom { 
+    from {transform: scale(0)}  
+    to {transform: scale(1)} 
+} 
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .wplrf-modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 90%;
+    }
+
+    .wplrf-container p .wplrf-input-text
+    {
+        width: 100%; 
+        padding: 15px 20px; 
+        margin: 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+    .wplrf-container .button.wplrf-close-btn
+    {
+        background-color: #a00;
+        color: white;
+        padding: 7px;
+        margin: 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        text-transform: capitalize;
+    }
+    #wplrf-user-lost-password-btn,
+    #wplrf-change-password-btn,
+    #wplrf-reset-password-btn,
+    #wplrf_resend_activation_link
+    {
+        width: 100%;
+    }
+    .wplrf-container button
+    {
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 15px 20px; 
+        margin: 0; 
+        border: none; 
+        cursor: pointer; 
+        width: 100%; 
+        text-transform: capitalize;
+    }  
+
+    .wplrf-account-button-container.center
+    {
+        left: 41% !important;
+    }
+    .wplrf-account-button-container.left
+    {
+        left: 80% !important;
+    }
+      
+  
+}
+@media (min-width: 200px) and (max-width: 319px) {
+    .wplrf-modal-content {
+        width: 90%;
+    }
+
+    .wplrf-container p .wplrf-input-text,
+    .wplrf-container .button.wplrf-close-btn,
+    #wplrf-user-lost-password-btn,
+    #wplrf-change-password-btn,
+    #wplrf-reset-password-btn,
+    #wplrf_resend_activation_link,
+     .wplrf-container button
+    {
+        width: 100%;
+        padding: 5px 10px;
+    } 
+    
+
+    .wplrf-account-button-container.center
+    {
+        left: 41% !important;
+    }
+    .wplrf-account-button-container.left {
+        left: 70% !important;
+    }
+
+}
+@media only screen and (device-width: 768px) {
+ 
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+  /* For landscape layouts only */
+  .wplrf-modal-content {
+        width: 90%;
+    }
+
+    .wplrf-container p .wplrf-input-text
+    {
+        width: 60%; 
+    } 
+    .wplrf-container .button.wplrf-close-btn
+    {
+        width: 15%;
+    }
+    #wplrf-user-lost-password-btn,
+    #wplrf-change-password-btn,
+    #wplrf-reset-password-btn,
+    #wplrf_resend_activation_link
+    {
+        width: 32%;
+    }
+    .wplrf-container button
+    {
+        width: 25%; 
+    }  
+
+    .wplrf-account-button-container.center
+    {
+        left: 41% !important;
+    }
+    .wplrf-account-button-container.left {
+        left: 86% !important;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+  .wplrf-modal-content {       
+        width: 90%;
+    }
+
+    .wplrf-container p .wplrf-input-text
+    {
+        width: 50%; 
+    } 
+    .wplrf-container .button.wplrf-close-btn
+    { 
+        width: 15%;
+    }
+    #wplrf-user-lost-password-btn,
+    #wplrf-change-password-btn,
+    #wplrf-reset-password-btn,
+    #wplrf_resend_activation_link
+    {
+        width: 30%;
+    }
+    .wplrf-container button
+    {
+        width: 25%; 
+    }  
+
+    .wplrf-account-button-container.center
+    {
+        left: 41% !important;
+    }
+    .wplrf-account-button-container.left {
+        left: 90% !important;
+    }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  /* For landscape layouts only */
+  .wplrf-modal-content {       
+        width: 90%;
+    }
+
+    .wplrf-container p .wplrf-input-text
+    {
+        width: 50%; 
+    } 
+    .wplrf-container .button.wplrf-close-btn
+    { 
+        width: 15%;
+    }
+    #wplrf-user-lost-password-btn,
+    #wplrf-change-password-btn,
+    #wplrf-reset-password-btn,
+    #wplrf_resend_activation_link
+    {
+        width: 20%;
+    }
+    .wplrf-container button
+    {
+        width: 25%; 
+    }  
+
+    .wplrf-account-button-container.center
+    {
+        left: 41% !important;
+    }
+    .wplrf-account-button-container.left {
+        left: 90% !important;
+    }
+}
+
+p.wplrf-success{
+    color: green;
+    font-weight: 600;   
+}
+p.wplrf-error{
+    color: red;
+    font-weight: 600;   
+}
